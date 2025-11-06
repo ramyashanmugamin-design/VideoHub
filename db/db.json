@@ -1,0 +1,174 @@
+{
+
+    "videocard" : [
+    {
+        "id": "vid001",
+        "title": "Talking Tech and AI with Google CEO Sundar Pichai!",
+        "description": "Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-1.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=n2RNcPRtAiY",
+        "views": "12.4K",
+        "likes": 5400,
+        "uploadDate": "5 days ago",
+        "channel": {
+        "name": "Marques Brownlee",
+        "avatar": "src/assets/ChannelImages/channel-1.jpeg"
+        }
+    },
+    {
+        "id": "vid002",
+        "title": "Try Not To Laugh Challenge #9",
+        "description": "Oh boy... do you like short funny videos? Then this Try Not To Laugh is for you!",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-2.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=mP0RAo9SKZk",
+        "views": "5.1M",
+        "likes": 6200,
+        "uploadDate": "1 year ago",
+        "channel": {
+        "name": "Markiplier",
+        "avatar": "src/assets/ChannelImages/channel-2.jpeg"
+        }
+    },
+    {
+        "id": "vid003",
+        "title": "Crazy Tik Toks Taken Moments Before DISASTER",
+        "description": "Crazy Tik Toks Taken Moments Before DISASTER! Leave a Like if you enjoyed and comment what your favorite clip is! Check out people having a really bad day   ",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-3.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=FgjPQQeTh1w",
+        "views": "123",
+        "likes": 4100,
+        "uploadDate": "3 months ago",
+        "channel": {
+        "name": "DesignDecoded",
+        "avatar": "src/assets/ChannelImages/channel-3.jpeg"
+        }
+    },
+    {
+        "id": "vid004",
+        "title": "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
+        "description": "The Collatz Conjecture is the simplest math problem no one can solve — it is easy enough for almost anyone to understand but notoriously difficult to solve.",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-4.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=094y1Z2wpJg",
+        "views": "2M",
+        "likes": 8700,
+        "uploadDate": "7 hours ago",
+        "channel": {
+        "name": "Veritasium",
+        "avatar": "src/assets/ChannelImages/channel-4.jpeg"
+        }
+    },
+    {
+        "id": "vid005",
+        "title": "Kadane's Algorithm to Maximum Sum Subarray Problem",
+        "description": "Here's a quick explanation of Kadane's Algorithm to Maximum Sum Subarray Problem",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-5.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=86CQq3pKSUw",
+        "views": "12.4M",
+        "likes": 5900,
+        "uploadDate": "10 months ago",
+        "channel": {
+        "name": "CS-Dojo",
+        "avatar": "src/assets/ChannelImages/channel-5.jpeg"
+        }
+    },
+    {
+        "id": "vid006",
+        "title": "Anything You Can Fit In The Circle I’ll Pay For",
+        "description": "Watch until the end to see how much i spent.",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-6.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=yXWw0_UfSFg",
+        "views": "88K",
+        "likes": 4700,
+        "uploadDate": "2 hours ago",
+        "channel": {
+        "name": "Mr-Beast",
+        "avatar": "src/assets/ChannelImages/channel-6.jpeg"
+        }
+    },
+    {
+        "id": "vid007",
+        "title": "Talking Tech and AI with Google CEO Sundar Pichai!",
+        "description": "Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-1.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=n2RNcPRtAiY",
+        "views": "12.4K",
+        "likes": 5400,
+        "uploadDate": "5 days ago",
+        "channel": {
+        "name": "Marques Brownlee",
+        "avatar": "src/assets/ChannelImages/channel-1.jpeg"
+        }
+    },
+    {
+        "id": "vid008",
+        "title": "Try Not To Laugh Challenge #9",
+        "description": "Oh boy... do you like short funny videos? Then this Try Not To Laugh is for you!",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-2.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=mP0RAo9SKZk",
+        "views": "5.1M",
+        "likes": 6200,
+        "uploadDate": "1 year ago",
+        "channel": {
+        "name": "Markiplier",
+        "avatar": "src/assets/ChannelImages/channel-2.jpeg"
+        }
+    },
+    {
+        "id": "vid009",
+        "title": "Crazy Tik Toks Taken Moments Before DISASTER",
+        "description": "Crazy Tik Toks Taken Moments Before DISASTER! Leave a Like if you enjoyed and comment what your favorite clip is! Check out people having a really bad day   ",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-3.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=FgjPQQeTh1w",
+        "views": "123",
+        "likes": 4100,
+        "uploadDate": "3 months ago",
+        "channel": {
+        "name": "DesignDecoded",
+        "avatar": "src/assets/ChannelImages/channel-3.jpeg"
+        }
+    },
+    {
+        "id": "vid0010",
+        "title": "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
+        "description": "The Collatz Conjecture is the simplest math problem no one can solve — it is easy enough for almost anyone to understand but notoriously difficult to solve.",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-4.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=094y1Z2wpJg",
+        "views": "2M",
+        "likes": 8700,
+        "uploadDate": "7 hours ago",
+        "channel": {
+        "name": "Veritasium",
+        "avatar": "src/assets/ChannelImages/channel-4.jpeg"
+        }
+    },
+    {
+        "id": "vid0011",
+        "title": "Kadane's Algorithm to Maximum Sum Subarray Problem",
+        "description": "Here's a quick explanation of Kadane's Algorithm to Maximum Sum Subarray Problem",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-5.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=86CQq3pKSUw",
+        "views": "12.4M",
+        "likes": 5900,
+        "uploadDate": "10 months ago",
+        "channel": {
+        "name": "CS-Dojo",
+        "avatar": "src/assets/ChannelImages/channel-5.jpeg"
+        }
+    },
+    {
+        "id": "vid0012",
+        "title": "Anything You Can Fit In The Circle I’ll Pay For",
+        "description": "Watch until the end to see how much i spent.",
+        "thumbnail": "src/assets/Thumbnails/thumbnail-6.webp",
+        "videoUrl": "https://www.youtube.com/watch?v=yXWw0_UfSFg",
+        "views": "88K",
+        "likes": 4700,
+        "uploadDate": "2 hours ago",
+        "channel": {
+        "name": "Mr-Beast",
+        "avatar": "src/assets/ChannelImages/channel-6.jpeg"
+        }
+    }
+    ]
+
+}
