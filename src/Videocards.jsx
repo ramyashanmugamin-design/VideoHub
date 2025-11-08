@@ -16,7 +16,7 @@ function Videocards() {
 
     return ( 
         <>
-        <div className="vh-20"><Header /></div>
+        <div className="header-height"><Header /></div>
 
         <div> 
             {cards.length > 0 ? (
@@ -26,7 +26,7 @@ function Videocards() {
                 
                 
                         {cards.map((card) => (
-                            <div key={card.id} className="col-lg-4 col-md-6 col-xs-12 my-3 highlight">
+                            <div key={card.id} className="col-lg-4 col-md-6 col-xs-12 my-2 highlight">
                                 <img src={card.thumbnail} className="thumbnail"></img> 
                         
 
@@ -58,7 +58,7 @@ function Videocards() {
 
             ) : (
 
-                <div> Loading Videos</div>
+                <div> <h3> "Loading Videos"  </h3></div>
             )
             }
         </div>

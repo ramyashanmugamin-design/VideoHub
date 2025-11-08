@@ -1,0 +1,121 @@
+
+
+.logo{
+    
+    width:100px;
+    cursor: pointer;
+}
+
+.search-icon{
+    width: 60px;
+    height:40px;
+    border-style:solid;
+    border-left: none;
+    border-radius: 0 45px 45px 0;
+    border-color: rgb(187, 186, 186);
+    background-color: rgb(250, 240, 240);
+    padding:4px;
+    border-width: 1.6px;
+    cursor: pointer;
+}
+.voice-icon{
+    width: 40px;
+    height:40px;
+    border:none;
+    border-radius: 50%;
+    background-color: rgb(241, 238, 238);
+    padding: 6px;
+    cursor: pointer;
+}
+.search-bar{
+    
+    width:540px;
+    min-width: 0;
+    max-width: 540px;
+    height: 40px;
+    margin-top:1px;
+    border-radius: 45px 0 0 45px;
+    border-style: solid;
+    border-color: rgb(187, 186, 186);
+    font-size: 16px;
+    padding:15px;
+   
+}
+
+.bi-plus-lg{
+    font-size: 25px;
+    
+}
+.create{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background-Color: rgb(241,238,238) ;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+        
+}
+
+.profile-icon{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin-left:10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.notification-icon{
+    width :48px;
+    height: 28px;
+    margin-left:10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.left-section{
+    width :150px;
+    margin-top:10px;
+}
+
+.middle-section{
+     flex:1;
+     margin-left:220px;
+     
+     margin-top:10px;
+}
+
+.right-section{
+    width :220px;
+    margin-top:12px;
+
+}
+
+.pagination {
+  display: flex;
+  list-style: none; 
+  margin-top: 18px;
+  overflow-x: hidden;
+}
+
+.pagination li a {
+    line-height: 50px;
+    text-decoration: none;
+    color:black;
+    white-space: nowrap;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 15px;
+    border-radius:12px;
+    background-color: rgb(241, 238, 238);
+    overflow-y: hidden;
+    cursor: pointer;
+}  
+
+.leftarrow{
+    display:none;
+}

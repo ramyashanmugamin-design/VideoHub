@@ -9,9 +9,9 @@ function App()
     <>
     <div className="d-flex vh-100">
       
-        <div className="w-5"><Sidebar /></div>
+        <div className="sidebar-width"><Sidebar /></div>
     
-        <div className="w-95"><Videocards /></div>
+        <div className="videocard-section-width"><Videocards /></div>
 
    </div>
    
