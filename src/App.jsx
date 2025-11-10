@@ -1,17 +1,20 @@
 import './index.css'
 import React from 'react';
 import Sidebar from './Sidebar';
-import Videocards from './videocards';
+import Header from "./Header";
+import Videocards from './Videocards';
 
 function App()
 {
   return(
     <>
-    <div className="d-flex vh-100">
-      
-        <div className="sidebar-width"><Sidebar /></div>
+    <div className="container-body">
+
+        <div className="sidebar"><Sidebar /></div>
+
+        <div className="header"><Header /></div>
     
-        <div className="videocard-section-width"><Videocards /></div>
+        <div className="videocard"><Videocards /></div>
 
    </div>
    
@@ -21,4 +24,4 @@ function App()
 
 }
 
-export default App
+export default App;

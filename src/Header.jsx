@@ -8,19 +8,20 @@ return(
 
 
         <div>
-            <div className="head d-flex justify-content-between">
-                    <div className="left-section"> 
-                        <img src="src/assets/Icons/youtube-logo.svg" className="logo"></img>
+            <div className="d-flex head">
+                    <div className="left-section d-flex"> 
+                        <div className="mt-2 highlight"><i className="bi bi-list fs-3 hamburger-header"></i> </div>
+                        <img src="src/assets/Icons/youtube-logo.svg" className="logo mx-1"></img>
                     </div>        
 
-                    <div className="middle-section"> 
-                        <input type="text" placeholder="Search" className="search-bar"></input>
+                    <div className="middle-section d-flex"> 
+                        <input type="text" placeholder="Search" id="search" className="search-bar"></input>
                         <img src="src/assets/Icons/search.svg" className="search-icon"></img>
                         <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon mx-2"></img>
                     </div>
 
                     <div className="right-section d-flex">    
-                        <span className="create d-flex justify-content-between">
+                        <span className="create d-flex justify-content-between mx-1">
                         <i className="bi bi-plus-lg"></i>
                         <h6 className="my-2"> Create</h6>
                         </span>
@@ -31,7 +32,7 @@ return(
             </div>
     
             <div>
-            <ul class="pagination">
+            <ul className="pagination">
                 <li><a href="#" className="leftarrow">&laquo;</a></li>
                 <li><a href="#">All</a></li>
                 <li><a href="#">Tech</a></li>

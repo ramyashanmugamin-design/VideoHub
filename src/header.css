@@ -1,4 +1,24 @@
+.head{
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.left-section{
+    width :140px;
+    margin-top:10px;
+}
 
+.middle-section{
+     margin-top:10px;
+     
+}
+
+.right-section{
+    width :200px;
+    margin-top:12px;
+    margin-right: 0px;
+    padding:0;
+
+}
 
 .logo{
     
@@ -28,18 +48,19 @@
     cursor: pointer;
 }
 .search-bar{
-    
     width:540px;
-    min-width: 0;
-    max-width: 540px;
     height: 40px;
     margin-top:1px;
     border-radius: 45px 0 0 45px;
     border-style: solid;
     border-color: rgb(187, 186, 186);
     font-size: 16px;
-    padding:15px;
-   
+    padding:15px;  
+}
+
+.search-bar:focus{
+    border-color: skyblue;
+    outline:none;
 }
 
 .bi-plus-lg{
@@ -66,33 +87,17 @@
     margin-left:10px;
     margin: 2px;
     cursor: pointer;
+    margin-right: 0px;
+
 }
 
 .notification-icon{
     width :48px;
     height: 28px;
-    margin-left:10px;
     margin: 2px;
     cursor: pointer;
 }
 
-.left-section{
-    width :150px;
-    margin-top:10px;
-}
-
-.middle-section{
-     flex:1;
-     margin-left:220px;
-     
-     margin-top:10px;
-}
-
-.right-section{
-    width :220px;
-    margin-top:12px;
-
-}
 
 .pagination {
   display: flex;

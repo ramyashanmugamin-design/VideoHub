@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-import Header from "./Header";
 import "./index.css"
 
 
@@ -16,21 +15,19 @@ function Videocards() {
 
     return ( 
         <>
-        <div className="header-height"><Header /></div>
+       
 
         <div> 
             {cards.length > 0 ? (
 
-            <div className="container-fluid">
-                <div className="row justify-content-center">
+            <div className="container-videocard">
                 
-                
+
                         {cards.map((card) => (
-                            <div key={card.id} className="col-lg-4 col-md-6 col-xs-12 my-2 highlight">
+                            <div key={card.id} className="mx-2 my-2 highlight videocard-display">
                                 <img src={card.thumbnail} className="thumbnail"></img> 
                         
-
-                            <div className="d-flex"> 
+                            <div className="d-flex thumbnaildetails"> 
                                     <div> 
                                         <img src={card.channel.avatar} className="rounded-circle channel m-2"></img> 
                                     </div>
@@ -45,26 +42,20 @@ function Videocards() {
                                         
                                     </div>   
                                 </div>
-                                
-                            
                             </div>
-                        
+
                         )
                         )
                         }
-                   
-                 </div>
+
+                 
             </div>
 
-            ) : (
-
-                <div> <h3> "Loading Videos"  </h3></div>
-            )
-            }
+            ) : (   <div> <h3> "Loading Videos"  </h3></div> )   }
         </div>
 
         </>
     );
 }
 
-export default Videocards
+export default Videocards;
