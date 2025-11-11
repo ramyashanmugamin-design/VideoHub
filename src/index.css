@@ -2,6 +2,34 @@
   box-sizing: border-box;
 }
 
+.hamburgermenu{
+
+margin-left :21px;
+width:30px;
+
+}
+
+.hamburgermenu:hover{
+    cursor: pointer;
+    background-color: rgb(230, 227, 227);
+    border-radius:20px;
+}
+
+.home{
+    margin-left :21px;
+    width:33px;
+}
+
+.shorts{
+    margin-left :21px;
+    width:35px;
+}
+
+.subscriptions{
+    margin-left :21px;
+    width:32px;
+}
+
 .sidebar-items{
     font-size: 10px;
 }
@@ -38,7 +66,7 @@
 }
 
 .highlight:hover{
-    background-color: rgb(198, 194, 194);
+    background-color: rgb(230, 227, 227);
     border-radius:10px;
 }
 
@@ -66,6 +94,7 @@
 .hamburger-header{
     display:none;
 }
+
 .sidebar{
     grid-column: col-start 1/ span 0;
     grid-row: row-start 1/span 12;   
@@ -94,7 +123,7 @@
 }
 
 .hamburger-header{
-    display:contents;
+    display:initial;
 }
 .sidebar{
     display:none;

@@ -10,8 +10,8 @@ return(
         <div>
             <div className="d-flex head">
                     <div className="left-section d-flex"> 
-                        <div className="mt-2 highlight"><i className="bi bi-list fs-3 hamburger-header"></i> </div>
-                        <img src="src/assets/Icons/youtube-logo.svg" className="logo mx-1"></img>
+                        <div className="mt-2"><img src="src/assets/menu items/hamburgermenu.png" className="hamburgermenu hamburger-header"></img></div>
+                        <img src="src/assets/menu items/logo.png" className="logo mx-1"></img>
                     </div>        
 
                     <div className="middle-section d-flex"> 
@@ -25,7 +25,7 @@ return(
                         <i className="bi bi-plus-lg"></i>
                         <h6 className="my-2"> Create</h6>
                         </span>
-                        <img src="src/assets/Icons/notifications.svg" className="notification-icon"></img>
+                        <img src="src/assets/menu items/notification.png" className="notification-icon highlight"></img>
                         <img src="src/assets/ChannelImages/mychannel.png" className="profile-icon" ></img>
                         
                     </div>
