@@ -10,7 +10,6 @@ return(
         <div>
             <div className="d-flex head">
                     <div className="left-section d-flex"> 
-                        <div className="mt-2"><img src="src/assets/menu items/hamburgermenu.png" className="hamburgermenu hamburger-header"></img></div>
                         <img src="src/assets/menu items/logo.png" className="logo mx-1"></img>
                     </div>        
 
@@ -21,10 +20,7 @@ return(
                     </div>
 
                     <div className="right-section d-flex">    
-                        <span className="create d-flex justify-content-between mx-1">
-                        <i className="bi bi-plus-lg"></i>
-                        <h6 className="my-2"> Create</h6>
-                        </span>
+                        <img src="src/assets/menu items/create.png" className="create highlight"></img>
                         <img src="src/assets/menu items/notification.png" className="notification-icon highlight"></img>
                         <img src="src/assets/ChannelImages/mychannel.png" className="profile-icon" ></img>
                         

@@ -6,6 +6,7 @@
 
 margin-left :21px;
 width:30px;
+pointer-events: all;
 
 }
 
@@ -30,6 +31,30 @@ width:30px;
     width:32px;
 }
 
+.history{
+    margin-left :21px;
+    width:32px;
+}
+
+.playlists{
+    margin-left :21px;
+    width:32px;
+}
+
+.yourvideos{
+    margin-left :21px;
+    width:32px;
+}
+
+.watchlater{
+    margin-left :21px;
+    width:32px;
+}
+
+.likedvideos{
+    margin-left :21px;
+    width:32px;
+}
 .sidebar-items{
     font-size: 10px;
 }
@@ -70,6 +95,11 @@ width:30px;
     border-radius:10px;
 }
 
+.sidebarmenu{
+    width:200px;
+    height:100vh;
+   
+}
 
 /* Grid container styles */
 
@@ -91,13 +121,15 @@ width:30px;
        
 }
 
-.hamburger-header{
-    display:none;
+.hamburger{
+    grid-column: col-start 1/ span 0;
+    grid-row: row-start 1/span 0;  
+    
 }
 
 .sidebar{
     grid-column: col-start 1/ span 0;
-    grid-row: row-start 1/span 12;   
+    grid-row: row-start 2/span 12;   
      
 }
 .videocard{
@@ -121,16 +153,12 @@ width:30px;
     min-width: 50%;
     
 }
-
-.hamburger-header{
-    display:initial;
-}
 .sidebar{
     display:none;
 }
 
 .header{
-    grid-column: col-start / span 12;
+    grid-column: col-start 2/ span 11;
     grid-row: row-start 1/span 0;
        
 }
