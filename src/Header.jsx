@@ -1,55 +1,43 @@
 import React from "react";
 import './header.css';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
     
+     const navigate= useNavigate();
+     const [searchValue, setSearchValue] = useState('');
+
+     function handleSearch()
+     {
+         if (searchValue.trim()) {
+          const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchValue)}`;
+          window.open(searchUrl, '_blank');
+        }
+     }
 return(
     <>
 
-
-        <div>
             <div className="d-flex head">
                     <div className="left-section d-flex"> 
-                        <img src="src/assets/menu items/logo.png" className="logo mx-1"></img>
+                        <img src="src/assets/menu items/logo.png" className="logo mx-1" onClick={(()=>{navigate("/")})}></img>
                     </div>        
 
-                    <div className="middle-section d-flex"> 
-                        <input type="text" placeholder="Search" id="search" className="search-bar"></input>
-                        <img src="src/assets/Icons/search.svg" className="search-icon"></img>
+                    <div className="middle-section d-flex container-fluid"> 
+                        <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)} />
+                        <img src="src/assets/Icons/search.svg" className="search-icon" onClick={()=>handleSearch()}></img>
                         <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon mx-2"></img>
                     </div>
 
                     <div className="right-section d-flex">    
                         <img src="src/assets/menu items/create.png" className="create highlight"></img>
                         <img src="src/assets/menu items/notification.png" className="notification-icon highlight"></img>
-                        <img src="src/assets/ChannelImages/mychannel.png" className="profile-icon" ></img>
+                        <img src="src/assets/menu items/mychannel.jpg" className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
                         
                     </div>
             </div>
     
-            <div>
-            <ul className="pagination">
-                <li><a href="#" className="leftarrow">&laquo;</a></li>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Challenge</a></li>
-                <li><a href="#">Math</a></li>
-                <li><a href="#">Gaming</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Cricket</a></li>
-                <li><a href="#">Baking</a></li>
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Mixes</a></li>
-                <li><a href="#">Computer Programming</a></li>
-                <li><a href="#">Asian music</a></li>
-                <li><a href="#">Recently uploaded</a></li>
-                <li><a href="#">Watched</a></li>
-                <li><a href="#" className="rightarrow">&raquo;</a></li>
-            </ul>
-                 
-            </div>
-        </div>
+       
     </>
 );
 

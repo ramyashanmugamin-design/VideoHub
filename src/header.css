@@ -1,6 +1,6 @@
 .head{
     justify-content: space-between;
-    overflow-x: hidden;
+   /* overflow-x: hidden; */
    
 }
 .left-section{
@@ -13,10 +13,10 @@
 }
 
 .right-section{
-    width :220px;
+    width :300px;
     margin-right: 0px;
     padding:0;
-    justify-content: space-around;
+   
 }
 
 .logo{
@@ -39,6 +39,11 @@
     border-width: 1.6px;
     cursor: pointer;
 }
+
+.search-icon:hover{
+      background-color: rgb(230, 227, 227);
+      
+}
 .voice-icon{
     width: 40px;
     height:40px;
@@ -48,15 +53,23 @@
     padding: 6px;
     cursor: pointer;
 }
+
+.voice-icon:hover{
+    background-color: rgb(230, 227, 227);
+    border-radius:50%;
+}
 .search-bar{
-    width:540px;
+    max-width:50%;
+    min-width: 0;
     height: 40px;
     margin-top:1px;
+    margin-left: 25%;
     border-radius: 45px 0 0 45px;
     border-style: solid;
     border-color: rgb(187, 186, 186);
     font-size: 16px;
     padding:15px;  
+    flex:1;
 }
 
 .search-bar:focus{
@@ -69,7 +82,7 @@
     
 }
 .create{
-    width: 100px;
+    width: 80px;
     height: 40px;
     margin-top:12px;
     border-radius: 25px;
@@ -96,6 +109,8 @@
     height: 50px;
     margin-top: 7px;
     cursor: pointer;
+    margin-left: 15px;
+    margin-right: 25px;
 }
 
 
@@ -104,6 +119,8 @@
   list-style: none; 
   margin-top: 18px;
   overflow-x: hidden;
+  margin:0;
+  padding:0;
 }
 
 .pagination li a {
