@@ -20,6 +20,7 @@ function Hamburger() {
     return(
         <>
         <div className="mt-2"><img src="src/assets/menu items/hamburgermenu.png" className= "hamburgermenu" onClick={(event)=>{displayMenu()}}></img></div>      
+        {menu && <Sidebarmenu />};
         </>
     );
 }
