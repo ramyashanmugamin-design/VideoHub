@@ -15,6 +15,13 @@ function Header() {
           window.open(searchUrl, '_blank');
         }
      }
+
+     const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+    };
+    
 return(
     <>
 
@@ -24,8 +31,8 @@ return(
                     </div>        
 
                     <div className="middle-section d-flex container-fluid"> 
-                        <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)} />
-                        <img src="src/assets/Icons/search.svg" className="search-icon" onClick={()=>handleSearch()}></img>
+                        <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)}  onKeyPress={handleKeyPress} />
+                        <img src="src/assets/Icons/search.svg" className="search-icon" onClick={()=>handleSearch()} ></img>
                         <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon mx-2"></img>
                     </div>
 
