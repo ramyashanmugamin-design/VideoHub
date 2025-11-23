@@ -1,0 +1,187 @@
+
+img{
+    cursor :pointer;
+}
+
+.flex-div{
+    display:flex;
+}
+
+.head{
+   
+    padding: 10px 1%;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    z-index:10;
+    background: white;
+
+}
+
+.hamburgermenu{
+
+margin-right: 20px;
+width:30px;
+height: 45px;
+pointer-events: all;
+
+}
+
+.hamburgermenu:hover{
+    cursor: pointer;
+    background-color: rgb(230, 227, 227);
+    border-radius:20px;
+}
+
+.logo{
+    
+    width:115px;
+    height:40px;
+  
+}
+
+.search-bar{
+    max-width:50%;
+    min-width: 0;
+    height: 40px;
+    margin-top:1px;
+    margin-left: 25%;
+    border-radius: 45px 0 0 45px;
+    border-style: solid;
+    border-color: rgb(187, 186, 186);
+    font-size: 16px;
+    padding:15px;  
+    flex:1;
+    
+}
+
+.search-bar:focus{
+    border-color: skyblue;
+    outline:none;
+}
+
+.search-icon{
+    width: 50px;
+    height:40px;
+    border-style:solid;
+    border-left: none;
+    border-radius: 0 45px 45px 0;
+    border-color: rgb(187, 186, 186);
+    background-color: rgb(250, 240, 240);
+    border-width: 1.6px;
+    
+   
+}
+
+.search-icon:hover{
+      background-color: rgb(230, 227, 227);
+      
+}
+.voice-icon{
+    width: 40px;
+    height:40px;
+    border:none;
+    border-radius: 50%;
+    margin-left:10px;
+    background-color: rgb(241, 238, 238);
+    padding: 6px;
+    
+}
+
+.voice-icon:hover{
+    background-color: rgb(230, 227, 227);
+    border-radius:50%;
+}
+
+.create{
+    width: 80px;
+    height: 40px;
+    margin-top:3px;
+    border-radius: 25px;
+    background-Color: rgb(241,238,238) ;
+    padding-left:10px;
+    padding-right:10px;
+           
+}
+
+.create-popup{
+ 
+  position: absolute;
+  top: 45px; 
+  left: 1325px; 
+
+  width: 160px;
+  height:40px;
+  background-color: rgb(232, 228, 228) ;
+  border-radius: 10px;
+  z-index: 100; 
+
+}
+
+.uploadvideos{
+   
+    width:40px;
+    height:40px;
+}
+.notification-icon{
+    width :37px;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.profile-icon{
+    width:32px;
+    height:32px;
+    margin-top:7px;
+    border-radius: 50%;
+    margin-right: 0px;
+    cursor: pointer;
+ }
+
+ 
+ @media screen and (min-width:501px) and (max-width: 770px) {
+
+
+.middle-section{
+    min-width:100px;
+}
+.search-bar{
+    max-width:50%;
+    min-width: 0;
+    height: 40px;
+    margin-top:1px;
+    margin-left: 5%;
+    border-radius: 45px 0 0 45px;
+    border-style: solid;
+    border-color: rgb(187, 186, 186);
+    font-size: 16px;
+    padding:15px;  
+    flex:1;
+    
+}
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+.search-bar{
+   display:none;
+
+}
+ .search-icon{
+    width: 50px;
+    height:40px;
+    border-style:none;
+    border-left: none;
+    border-radius: 50%;
+    border-color:none;
+    background-color:none;
+    border-width: none;
+    padding:0;
+   
+}
+
+}

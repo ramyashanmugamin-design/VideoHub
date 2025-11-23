@@ -1,61 +1,54 @@
 import React from "react";
+import './header.css';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-function Header() {
+function Header({setMenuOpen , onCreateClick}) {
+    
+     const navigate= useNavigate();
+     const [searchValue, setSearchValue] = useState('');
+
+     function handleSearch()
+     {
+         if (searchValue.trim()) {
+          const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchValue)}`;
+          window.open(searchUrl, '_blank');
+        }
+     }
+
+     const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+    };
     
 return(
     <>
-     <div className="container-fluid mt-2">
-        <div className="row justify-content-between"> 
-                <span className="col-2">
-                    <img src="src/assets/Icons/youtube-logo.svg" className="logo" style={{cursor:'pointer'}}></img>
-                </span>
 
-                <span className="col-8 d-flex">
-                    <input type="text" placeholder="Search" className="search-bar"></input>
-                    <img src="src/assets/Icons/search.svg" className="btn search-icon highlight"></img>
-                    <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon mx-2 highlight"></img>
-                </span>
-                <span className="col-2 d-flex">
-                    <span className="highlight create d-flex">
-                    <i className="bi bi-plus-lg "></i>
-                    <p style={{paddingLeft:'8px'}}> Create</p>
-                    </span>
-                    <img src="src/assets/Icons/notifications.svg" className="notification-icon highlight"></img>
-                    <img src="src/assets/ChannelImages/mychannel.png" className="profile-icon" style={{cursor:'pointer'}} ></img>
-                </span>
-                <div className="d-flex">
-                    <div className="fs-3 my-3 arrow">{'<'}</div>
-                    <div className="filter d-flex">
-                                
-                                <p>All</p>
-                                <p>Tech</p>
-                                <p>Challenge</p>
-                                <p>Tik Tok</p>
-                                <p>Math</p>
-                                <p>Gaming</p>
-                                <p>Music</p>
-                                <p>News</p>
-                                <p>cricket</p>
-                                <p>Baking</p>
-                                <p>Comedy</p>
-                                <p>Mixes</p>
-                                <p>Computer Programming</p>
-                                <p>Asian music</p>
-                                <p>Recently uploaded</p>
-                                <p>Watched</p>
-                                
+            <div className="flex-div head">
+                    <div className="left-section flex-div"> 
+                        <img src="src/assets/menu items/hamburgermenu.png" className= "hamburgermenu" onClick={()=> setMenuOpen(prev=>prev===false?true:false)}></img>
+                        <img src="src/assets/menu items/logo.png" className="logo" onClick={(()=>{navigate("/")})}></img>
+                    </div>        
+
+                    <div className="middle-section flex-div container-fluid"> 
+                        <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)}  onKeyPress={handleKeyPress} />
+                        <img src="src/assets/menu items/searchicon.png" className="search-icon" onClick={()=>handleSearch()} ></img>
+                        <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon"></img>
                     </div>
-                    <div className="fs-3 my-3 arrow">{'>'}</div>
 
-                </div>
-            
-
-        </div>
-        
-     </div>
+                    <div className="right-section flex-div">    
+                        <img src="src/assets/menu items/create.png" className="create highlight" onClick={onCreateClick}></img>
+                        <img src="src/assets/menu items/notification.png" className="notification-icon highlight"></img>
+                        <img src="src/assets/menu items/mychannel.jpg" className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
+                        
+                    </div>
+            </div>
+    
+       
     </>
 );
 
 }
 
-export default Header
+export default Header;

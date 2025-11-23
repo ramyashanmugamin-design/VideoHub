@@ -1,24 +1,45 @@
 import './index.css'
-import React from 'react';
+import { useState } from 'react';
+import Header from "./Header";
+import Videocards from './Videocards';
 import Sidebar from './Sidebar';
-import Videocards from './videocards';
+import Sidebarmenu from './Sidebarmenu';
+import Subscriptions from './Subscriptions';
+import Create from './Create';
+
 
 function App()
 {
+  
+ const [menuOpen, setMenuOpen] = useState(false);
+  const[showSubscription,setShowSubscription] = useState(false);
+  const[openCreatemenu,setOpenCreatemenu] = useState(false);
+
+
+  const togglePopup = () => {
+    setShowSubscription(!showSubscription)
+  };
+
+  const toggleCreatePopup = () => {
+    setOpenCreatemenu(!openCreatemenu)
+  };
+
+  
   return(
     <>
-    <div className="d-flex vh-100">
-      
-        <div className="w-5"><Sidebar /></div>
-    
-        <div className="w-95"><Videocards /></div>
 
-   </div>
-   
+        <Header setMenuOpen={setMenuOpen} onCreateClick={toggleCreatePopup} />
+        {openCreatemenu && <Create />} 
+        <div>
+        {menuOpen ? <Sidebarmenu /> : <Sidebar onSubscriptionClick={togglePopup} />}
+        {showSubscription && <Subscriptions />} 
+        {menuOpen ? <div className="container"> <Videocards /> </div> : <div className="large-container"> <Videocards /> </div>}
+        </div>
+        
     </>
     
   );
 
 }
 
-export default App
+export default App;
