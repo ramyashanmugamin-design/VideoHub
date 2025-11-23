@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.favicon{
+    width:52px;
+    height:52px;
+}
+
 .container{
 
     padding-left: 3%;
