@@ -3,7 +3,7 @@ import './header.css';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Header() {
+function Header({setMenuOpen , onCreateClick}) {
     
      const navigate= useNavigate();
      const [searchValue, setSearchValue] = useState('');
@@ -25,19 +25,20 @@ function Header() {
 return(
     <>
 
-            <div className="d-flex head">
-                    <div className="left-section d-flex"> 
-                        <img src="src/assets/menu items/logo.png" className="logo mx-1" onClick={(()=>{navigate("/")})}></img>
+            <div className="flex-div head">
+                    <div className="left-section flex-div"> 
+                        <img src="src/assets/menu items/hamburgermenu.png" className= "hamburgermenu" onClick={()=> setMenuOpen(prev=>prev===false?true:false)}></img>
+                        <img src="src/assets/menu items/logo.png" className="logo" onClick={(()=>{navigate("/")})}></img>
                     </div>        
 
-                    <div className="middle-section d-flex container-fluid"> 
+                    <div className="middle-section flex-div container-fluid"> 
                         <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)}  onKeyPress={handleKeyPress} />
-                        <img src="src/assets/Icons/search.svg" className="search-icon" onClick={()=>handleSearch()} ></img>
-                        <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon mx-2"></img>
+                        <img src="src/assets/menu items/searchicon.png" className="search-icon" onClick={()=>handleSearch()} ></img>
+                        <img src="src/assets/Icons/voice-search-icon.svg" className="voice-icon"></img>
                     </div>
 
-                    <div className="right-section d-flex">    
-                        <img src="src/assets/menu items/create.png" className="create highlight"></img>
+                    <div className="right-section flex-div">    
+                        <img src="src/assets/menu items/create.png" className="create highlight" onClick={onCreateClick}></img>
                         <img src="src/assets/menu items/notification.png" className="notification-icon highlight"></img>
                         <img src="src/assets/menu items/mychannel.jpg" className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
                         

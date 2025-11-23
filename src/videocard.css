@@ -1,0 +1,76 @@
+
+.container-videocard{
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+   grid-row-gap: 30px;
+   grid-column-gap: 16px;
+   margin-top:15px;
+   
+}
+
+.thumbnaildetails{
+  
+    flex:1;
+}
+
+.cardtitle{
+    max-width:350px;
+   flex:1;
+   justify-content: space-between;
+}
+
+.thumbnail{
+    width: 450px; 
+    min-width: 300px;
+    height: 225px;
+    border-radius: 5px;
+}
+
+.channel{
+    width: 40px;
+}
+
+.p-mb{
+    margin-bottom: 7px;
+} 
+
+
+.pagination {
+  display: flex;
+  list-style: none; 
+  margin-top: 18px;
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+}
+
+.item {
+    
+    font-size: 16px;
+    font-weight:500;
+    padding: 5px 15px 5px 15px;
+    margin-right: 15px;
+    border-radius:12px;
+    background-color: rgb(241, 238, 238);
+    cursor: pointer;
+}  
+
+.selected-item {
+   font-size: 16px;
+    font-weight:500;
+    padding: 5px 15px 5px 15px;
+    margin-right: 15px;
+    border-radius:12px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+@media screen and (min-width:50px) and (max-width: 900px) {
+
+    .pagination{
+    display:none;
+}
+
+
+}

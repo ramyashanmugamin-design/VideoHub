@@ -1,95 +1,39 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.hamburgermenu{
+.container{
 
-margin-left :21px;
-width:30px;
-pointer-events: all;
-
+    padding-left: 3%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
-.hamburgermenu:hover{
-    cursor: pointer;
-    background-color: rgb(230, 227, 227);
-    border-radius:20px;
-}
-
-.home{
-    margin-left :21px;
-    width:33px;
-}
-
-.shorts{
-    margin-left :21px;
-    width:35px;
-}
-
-.subscriptions{
-    margin-left :21px;
-    width:32px;
-}
-
-.history{
-    margin-left :21px;
-    width:32px;
-}
-
-.playlists{
-    margin-left :21px;
-    width:32px;
-}
-
-.yourvideos{
-    margin-left :21px;
-    width:32px;
-}
-
-
-.watchlater{
-    margin-left :21px;
-    width:32px;
-}
-
-.likedvideos{
-    margin-left :21px;
-    width:32px;
-}
-.sidebar-items{
-    font-size: 10px;
-}
-
-.container-videocard{
-   display:flex;
-   flex-wrap: wrap; 
-   margin:0;
-   padding:0;
+.large-container{
+   
+    padding-left: 7%;
+     padding-right: 0;
+    margin-right: 0;
+    padding-top:20px;
+    padding-bottom:20px;
    
 }
 
-.thumbnaildetails{
-  
-    flex:1;
+.profile-container{
+
+    padding-left: 15%;
+   
 }
 
-.cardtitle{
-   flex:1;
-}
+.large-profile-container{
 
-.thumbnail{
-    width: 450px; 
-    height: 225px;
-    border-radius: 5px;
-}
+     padding-left: 7%;
 
-.channel{
-    width: 40px;
 }
-
-.p-mb{
-    margin-bottom: 7px;
-} 
 
 .highlight{
     cursor:pointer;
@@ -100,86 +44,23 @@ pointer-events: all;
     border-radius:10px;
 }
 
-.sidebarmenu{
 
-    width: 190px;
-    height: 1000px;
-    background-color: white;
-    position:fixed;
-    z-index :1000;
-}
-
-/* Grid container styles */
-
-.container-body{
-    display:grid;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: 80px repeat(11, [col-start] 1fr);
-    grid-template-rows: repeat(12, [row-start] 1fr);
-     height: 99vh;
-    height: 99dvh;
-    width: 99vw;
-    width:99dvw;  
- }
-
-.header{
-    grid-column: col-start 1/ span 11;
-    grid-row: row-start 1/span 0;
-       
-}
-
-.hamburger{
-    grid-column: col-start 1/ span 0;
-    grid-row: row-start 1/span 0;  
-    
-}
-.sidebar{
-    grid-column: col-start 1/ span 0;
-    grid-row: row-start 2/span 12;   
-   
-}
-
-.videocard{
-    grid-column: col-start 1/ span 11;
-     grid-row: row-start 2/span 11;   
-     
-}
-
-@media screen and (max-width: 600px) {
-
-.container-body{
-    display:grid;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-template-rows: repeat(12, [row-start] 1fr);    
-    height: 99vh;
-    height: 99dvh;
-    width: 99vw;
-    width:99dvw;  
-    min-width: 50%;
-    
-}
-
+@media screen and (min-width:50px) and (max-width: 900px) {
 .sidebar{
     display:none;
 }
 
-.search-bar{
+.sidebar-small{
     display:none;
 }
 
-
-.header{
-    grid-column: col-start 2/ span 11;
-    grid-row: row-start 1/span 0;
-       
-}
-.videocard{
-    grid-column: col-start/ span 12;
-     grid-row: row-start 2/span 11;   
-     
+.hamburgermenu{
+    display:none;
 }
 
+.container, .large-container{
+    padding-left:5%;
+    padding-right:5%;
 }
+}
+

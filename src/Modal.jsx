@@ -24,10 +24,9 @@ function Modal({onClose}){
 
                 <div className="d-flex flex-column ">
                     <h4 className="info mx-4">More info</h4>
-                    <div className="d-flex"> <i class="bi bi-globe fs-4 mt-2 mx-4"></i> <p className="mt-3 highlight"  onClick={onClose}>www.youtube.com/@ramyashanmugam2</p> </div>
-                     <div className="d-flex"> <i class="bi bi-info-circle fs-4 mt-2 mx-4"></i> <p className="mt-3"> Joined 24 Feb 2014 </p> </div>
-                    <div className="d-flex"><img src="src/assets/menu items/your videos.png" className="video"></img><p className="mt-3 mx-3"> 1 video </p> </div>
-                    <div className="d-flex"><i class="bi bi-graph-up-arrow fs-5 mt-2 mx-4"></i><p className="mt-3"> 40 views </p> </div>
+                    <div className="d-flex"> <i class="bi bi-globe fs-4 mt-2 mx-4"></i> <p className="mt-3 highlight"  onClick={onClose}>www.youtube.com/@RamyaS-z2s</p> </div>
+                     <div className="d-flex"> <i class="bi bi-info-circle fs-4 mt-2 mx-4"></i> <p className="mt-3"> Joined 20 Nov 2025 </p> </div>
+                    
                      <div className="d-flex highlight sharechannel"><img src="src/assets/menu items/share.png" className="share"></img><p className="mt-2"> Share Channel </p></div>
 
                 </div>

@@ -1,0 +1,96 @@
+
+.sidebar{
+    width:15%;
+    height: 90%;
+    position:fixed;
+    top:0;
+    margin-top: 60px;
+    background: white;
+     overflow-y: auto;
+    
+}
+
+.sidebar-small{
+    width:5%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    margin-top: 60px;
+    background: white;
+}
+
+.side-links{
+    display: flex;
+    margin-bottom: 20px;
+    width:fit-content;
+    flex-wrap: wrap;
+    cursor:pointer;
+   
+}
+
+.side-links-small{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width:fit-content;
+    flex-wrap: wrap;
+    cursor:pointer;
+}
+
+.home{
+    margin-left :21px;
+    width:33px;
+}
+
+.shorts{
+    margin-left :21px;
+    width:35px;
+}
+
+.subscriptions{
+    margin-left :21px;
+    width:32px;
+}
+
+.history, .playlists, .yourvideos, .watchlater, .likedvideos{
+    margin-left :21px;
+    width:32px;
+}
+
+.sidebar-items{
+    font-size: 10px;
+}
+
+.channellogo {
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    margin-left:15px;
+    margin-top: 4px;
+}
+
+.subscription-container{
+    position:fixed;
+    inset:0;
+    width:20%;
+    height:80%;
+    display: flex;
+    background:aqua;
+    z-index: 1000;
+    justify-content: right;
+    align-items: center;
+}
+.subscription{
+   
+  position: absolute;
+  
+  top: 200px; 
+  left: 90px; 
+
+  width: 250px;
+  height:300px;
+  background-color: white;
+ 
+  z-index: 100; 
+     
+}
