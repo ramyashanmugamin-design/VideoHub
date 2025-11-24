@@ -15,7 +15,10 @@ const router= createBrowserRouter([
         element : <Profile />,
         errorElement : <NotFound />
     }
-]);
+],{
+  
+  basename: '/VideoHub' 
+});
 
 createRoot(document.getElementById('root')).render
 (
