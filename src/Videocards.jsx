@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import "./index.css";
 import "./header.css";
 import "./videocard.css";
+import "./db.json";
 
 
 function Videocards() {
@@ -11,14 +12,22 @@ function Videocards() {
     const [selectedId,setSelectedId] =useState('1');
     
 
+ {/* 
     useEffect(()=>{
-        fetch('http://localhost:3000/videocard').
+        fetch('/VideoHub/videocard').
         then((data)=>data.json()).
         then((data)=>{ setCards(data); setFilteredVideos(data)} ).
         catch(err => console.log(err))
     },[]);
     
-    
+*/}
+
+      const data = db.videocard;
+    useEffect(()=>{
+      setCards(data); 
+      setFilteredVideos(data);
+       },[]);
+
 
     function filterVideos(category,id)
     {

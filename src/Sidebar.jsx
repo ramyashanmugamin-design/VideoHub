@@ -17,18 +17,18 @@ function Sidebar({ onSubscriptionClick }) {
             <div className="shortcut-links">
             
             <div className="side-links-small highlight mt-3" onClick={(()=>{navigate("/")})}> 
-                <img src="src/assets/menu items/home.png" className="home"></img> 
+                <img src="./src/assets/menu items/home.png" className="home"></img> 
                 <div className="sidebar-items mx-4" >  Home  </div> 
             </div>
                
            <div className="side-links-small highlight" onClick={()=>{window.open(shortsLink,'_blank')}}>
-                <img src="src/assets/menu items/shorts.png" className="shorts">
+                <img src="./src/assets/menu items/shorts.png" className="shorts">
                 </img><div className="sidebar-items mx-4" > Shorts </div> 
             </div> 
            
            
             <div className="side-links-small highlight" onClick={onSubscriptionClick}> 
-                <img src="src/assets/menu items/subscriptions.png" className="subscriptions" ></img>
+                <img src="./src/assets/menu items/subscriptions.png" className="subscriptions" ></img>
                 <div className="sidebar-items mx-2"> Subscriptions </div>
             </div>
             
