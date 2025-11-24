@@ -1,6 +1,6 @@
 
 import './header.css';
-import uploadvideos from 'src/assets/menu items/your videos.png';
+import uploadvideos from '/src/assets/menu items/your videos.png';
 
 function Create() {
     return(

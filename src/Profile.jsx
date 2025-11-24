@@ -27,7 +27,7 @@ function Profile()
         <div className={` ${menuOpen ? "profile-container": "large-profile-container"}`}>
 
             <div className="d-flex">
-            <img src="./src/assets/menu items/mychannel.jpg" className="dpStyle"></img>
+            <img src="/src/assets/menu items/mychannel.jpg" className="dpStyle"></img>
              <div className="profileStyle">
                 <h1> Ramya S</h1>
                 <h6>@RamyaS-z2s</h6>
