@@ -2,6 +2,8 @@ import React from "react";
 import './header.css';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import hamburgermenu from 'src/assets/menu items/hamburgermenu.png';
+import logo from 'src/assets/menu items/logo.png';
 
 function Header({setMenuOpen , onCreateClick}) {
     
@@ -27,8 +29,8 @@ return(
 
             <div className="flex-div head">
                     <div className="left-section flex-div"> 
-                        <img src="./src/assets/menu items/hamburgermenu.png" className= "hamburgermenu" onClick={()=> setMenuOpen(prev=>prev===false?true:false)}></img>
-                        <img src="./src/assets/menu items/logo.png" className="logo" onClick={(()=>{navigate("/")})}></img>
+                        <img src={hamburgermenu} className= "hamburgermenu" onClick={()=> setMenuOpen(prev=>prev===false?true:false)}></img>
+                        <img src={logo} className="logo" onClick={(()=>{navigate("/")})}></img>
                     </div>        
 
                     <div className="middle-section flex-div container-fluid"> 

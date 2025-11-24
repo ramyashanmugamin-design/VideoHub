@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import "./index.css";
 import "./header.css";
 import "./videocard.css";
-import "./db.json";
+import db from "./db.json";
 
 
 function Videocards() {
