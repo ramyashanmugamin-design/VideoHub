@@ -4,6 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import hamburgermenu from '/src/assets/menu items/hamburgermenu.png';
 import logo from '/src/assets/menu items/logo.png';
+import searchicon from '/src/assets/menu items/searchicon.png';
+import voiceicon from '/src/assets/Icons/voice-search-icon.svg';
+import create from '/src/assets/menu items/create.png';
+import notification from '/src/assets/menu items/notification.png';
+import profileicon from '/src/assets/menu items/mychannel.jpg';
 
 function Header({setMenuOpen , onCreateClick}) {
     
@@ -35,14 +40,14 @@ return(
 
                     <div className="middle-section flex-div container-fluid"> 
                         <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)}  onKeyPress={handleKeyPress} />
-                        <img src="/src/assets/menu items/searchicon.png" className="search-icon" onClick={()=>handleSearch()} ></img>
-                        <img src="/src/assets/Icons/voice-search-icon.svg" className="voice-icon"></img>
+                        <img src={searchicon} className="search-icon" onClick={()=>handleSearch()} ></img>
+                        <img src={voiceicon} className="voice-icon"></img>
                     </div>
 
                     <div className="right-section flex-div">    
-                        <img src="/src/assets/menu items/create.png" className="create highlight" onClick={onCreateClick}></img>
-                        <img src="/src/assets/menu items/notification.png" className="notification-icon highlight"></img>
-                        <img src="/src/assets/menu items/mychannel.jpg" className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
+                        <img src={create} className="create highlight" onClick={onCreateClick}></img>
+                        <img src={notification} className="notification-icon highlight"></img>
+                        <img src={profileicon} className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
                         
                     </div>
             </div>

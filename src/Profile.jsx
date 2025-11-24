@@ -5,6 +5,7 @@ import Sidebarmenu from './Sidebarmenu';
 import './profile.css';
 import { useState } from 'react';
 import Modal from './Modal';
+import dp from '/src/assets/menu items/mychannel.jpg';
 
 function Profile()
 {
@@ -27,7 +28,7 @@ function Profile()
         <div className={` ${menuOpen ? "profile-container": "large-profile-container"}`}>
 
             <div className="d-flex">
-            <img src="/src/assets/menu items/mychannel.jpg" className="dpStyle"></img>
+            <img src={dp} className="dpStyle"></img>
              <div className="profileStyle">
                 <h1> Ramya S</h1>
                 <h6>@RamyaS-z2s</h6>
