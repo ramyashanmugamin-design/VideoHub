@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import share from 'src/assets/menu items/share.png';
+import share from '/src/assets/menu items/share.png';
 
 
 function Modal({onClose}){
