@@ -5,13 +5,13 @@
         "id": "vid001",
         "title": "Jana Nayagan – Thalapathy Kacheri Lyric Video| Thalapathy Vijay| H Vinoth| Anirudh| Pooja Hegde| KVN",
         "category": "music",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/Jananayagan.png",
+        "thumbnail": "/images/Thumbnails/Jananayagan.png",
         "videoUrl": "https://www.youtube.com/watch?v=KgpnfT5bgLY&list=RDKgpnfT5bgLY&start_radio=1",
         "views": "5M",
         "uploadDate": "10 days ago",
         "channel": {
         "name": "T-Series",
-        "avatar": "VideoHub/src/assets/ChannelImages/tseries.png"
+        "avatar": "/images/ChannelImages/tseries.png"
         }
     },
         
@@ -19,13 +19,13 @@
         "id": "vid002",
         "title": "Data Structures Explained: The Fundamentals | Ep-1 | Tamil | Code io",
         "category": "data structure",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/datastructure.png",
+        "thumbnail": "/images/Thumbnails/datastructure.png",
         "videoUrl": "https://www.youtube.com/watch?v=7IsnvxL7dto",
         "views": "86k",
         "uploadDate": "2 years ago",
         "channel": {
         "name": "code-io Tamil",
-        "avatar": "VideoHub/src/assets/ChannelImages/codeio.png"
+        "avatar": "/images/ChannelImages/codeio.png"
         }
     },
         
@@ -33,13 +33,13 @@
         "id": "vid003",
         "title": "Oorum Blood | Dude | Pradeep Ranganathan, Mamitha | Sai Abhyankkar| Keerthiswaran|Paal Dabba| Mythri",
         "category": "music",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/oorumblood.png",
+        "thumbnail": "/images/Thumbnails/oorumblood.png",
         "videoUrl": "https://www.youtube.com/watch?v=4Bsc2uI_LsM&list=RD4Bsc2uI_LsM&start_radio=1",
         "views": "1M",
         "uploadDate": "2 months ago",
         "channel": {
         "name": "Think Music India",
-        "avatar": "VideoHub/src/assets/ChannelImages/thinkmusic.png"
+        "avatar": "/images/ChannelImages/thinkmusic.png"
         }
     },
     
@@ -47,13 +47,13 @@
         "id": "vid004",
         "title": "Python Full course for Beginners | Master Python in 10 Hours | code io - Tamil",
         "category": "phython",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/phython.png",
+        "thumbnail": "/images/Thumbnails/phython.png",
         "videoUrl": "https://www.youtube.com/watch?v=dHzYLjfr-uY&t=10s",
         "views": "389k",
         "uploadDate": "10 months ago",
         "channel": {
         "name": "code-io Tamil",
-        "avatar": "VideoHub/src/assets/ChannelImages/codeio.png"
+        "avatar": "/images/ChannelImages/codeio.png"
         }
     },
         
@@ -61,13 +61,13 @@
         "id": "vid005",
         "title": "Kadhal Anukkal Official Video Song | Enthiran | Rajinikanth | Aishwarya Rai | A.R.Rahman",
         "category": "music",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/kadhalanukkal.png",
+        "thumbnail": "/images/Thumbnails/kadhalanukkal.png",
         "videoUrl": "https://www.youtube.com/watch?v=gpVA5mx73UE&list=RDgpVA5mx73UE&start_radio=1",
         "views": "16M",
         "uploadDate": "10 years ago",
         "channel": {
         "name": "Think Music India",
-        "avatar": "VideoHub/src/assets/ChannelImages/thinkmusic.png"
+        "avatar": "/images/ChannelImages/thinkmusic.png"
         }
     },
     
@@ -75,13 +75,13 @@
         "id": "vid006",
         "title": "Masala Pasta recipe in Tamil | Pasta Snacks Recipe in Tamil",
         "category": "cooking",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/pasta.png",
+        "thumbnail": "/images/Thumbnails/pasta.png",
         "videoUrl": "https://www.youtube.com/watch?v=yNaemzCotUI",
         "views": "1ok",
         "uploadDate": "3 days ago",
         "channel": {
         "name": "Madras Samayal",
-        "avatar": "VideoHub/src/assets/ChannelImages/madras samayal.png"
+        "avatar": "/images/ChannelImages/madras samayal.png"
         }
     },
         
@@ -89,13 +89,13 @@
         "id": "vid007",
         "title": "HTML Full Course in 2 Hours | Web Development in Tamil | code io",
         "category": "html",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/html.png",
+        "thumbnail": "/images/Thumbnails/html.png",
         "videoUrl": "https://www.youtube.com/watch?v=3jkub2c0kLA",
         "views": "315k",
         "uploadDate": "1 year ago",
         "channel": {
         "name": "code-io Tamil",
-        "avatar": "VideoHub/src/assets/ChannelImages/codeio.png"
+        "avatar": "/images/ChannelImages/codeio.png"
         }
     },
         
@@ -103,13 +103,13 @@
         "id": "vid008",
         "title": "Black Forest Cake in Tamil | How to make Black Forest Cake at home | Cake Recipes in Tamil",
         "category": "baking",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/blackforest.png",
+        "thumbnail": "/images/Thumbnails/blackforest.png",
         "videoUrl": "https://www.youtube.com/watch?v=gphly1-xH90",
         "views": "8.9M",
         "uploadDate": "8 years ago",
         "channel": {
         "name": "Madras Samayal",
-        "avatar": "VideoHub/src/assets/ChannelImages/madras samayal.png"
+        "avatar": "/images/ChannelImages/madras samayal.png"
         }
     },
         
@@ -117,13 +117,13 @@
         "id": "vid009",
         "title": "C++ Programming Full Course in Tamil | Beginner to Advanced | code io - Tamil",
         "category": "programming",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/c.png",
+        "thumbnail": "/images/Thumbnails/c.png",
         "videoUrl": "https://www.youtube.com/watch?v=VnaKu8_H3jU",
         "views": "82k",
         "uploadDate": "5 months ago",
         "channel": {
         "name": "Code-io Tamil",
-        "avatar": "VideoHub/src/assets/ChannelImages/codeio.png"
+        "avatar": "/images/ChannelImages/codeio.png"
         }
     },
         
@@ -131,13 +131,13 @@
         "id": "vid0010",
         "title": "Blippi Learns and Plays with Colors! | Toys and Shapes | Educational Videos for Kids",
         "category": "kids",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/blippi.png",
+        "thumbnail": "/images/Thumbnails/blippi.png",
         "videoUrl": "https://www.youtube.com/watch?v=IUnGsvqHXP0",
         "views": "15M",
         "uploadDate": "10 months ago",
         "channel": {
         "name": "Blippi world",
-        "avatar": "VideoHub/src/assets/ChannelImages/blippi.png"
+        "avatar": "/images/ChannelImages/blippi.png"
         }
     },
     
@@ -145,13 +145,13 @@
         "id": "vid0011",
         "title": "96 (2018) Tamil Full Movie HD | 4K | Vijay Sethupathi | Trisha Krishnan | Vicky Cinemas",
         "category": "movie",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/96.png",
+        "thumbnail": "/images/Thumbnails/96.png",
         "videoUrl": "https://www.youtube.com/watch?v=HDLh5kEGB_w",
         "views": "6.6M",
         "uploadDate": "7 months ago",
         "channel": {
         "name": "vicky Cinemas HD",
-        "avatar": "VideoHub/src/assets/ChannelImages/vicky.png"
+        "avatar": "/images/ChannelImages/vicky.png"
         }
     },
         
@@ -159,26 +159,26 @@
         "id": "vid0012",
         "title": "Kadhalukku Mariyadhai (1997) Tamil Full Movie HD | 4K | Vijay | Shalini | Srividya",
         "category": "entertainment",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/km.png",
+        "thumbnail": "/images/Thumbnails/km.png",
         "videoUrl": "https://www.youtube.com/watch?v=VsxYKZsbgEo",
         "views": "92k",
         "uploadDate": "3 weeks ago",
         "channel": {
         "name": "vicky Cinemas HD",
-        "avatar": "VideoHub/src/assets/ChannelImages/vicky.png"
+        "avatar": "/images/ChannelImages/vicky.png"
         }
     },
     {
         "id": "vid0013",
         "title": "Pizza Recipe in Tamil | Homemade Pizza Recipe | Veg Pizza Recipe | Pizza recipe without Oven",
         "category": "pizza",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/pizza.png",
+        "thumbnail": "/images/Thumbnails/pizza.png",
         "videoUrl": "https://www.youtube.com/watch?v=VFBZRZ9lTsM",
         "views": "9.9M",
         "uploadDate": "7 years ago",
         "channel": {
         "name": "Madras Samayal",
-        "avatar": "VideoHub/src/assets/ChannelImages/madras samayal.png"
+        "avatar": "/images/ChannelImages/madras samayal.png"
         }
     },
         
@@ -186,26 +186,26 @@
         "id": "vid0014",
         "title": "Kaju Katli Recipe in Tamil | How to make Kaju Katli at Home in Tamil",
         "category": "sweet",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/sweet.png",
+        "thumbnail": "/images/Thumbnails/sweet.png",
         "videoUrl": "https://www.youtube.com/watch?v=6bVLMUicgVI",
         "views": "695k",
         "uploadDate": "2 years ago",
         "channel": {
         "name": "Madras Samayal",
-        "avatar": "VideoHub/src/assets/ChannelImages/madras samayal.png"
+        "avatar": "/images/ChannelImages/madras samayal.png"
         }
     },
     {
         "id": "vid0015",
         "title": "I Spy with My Little Eye… Blippi plays at Jewel Changi! 👀",
         "category": "kids",
-        "thumbnail": "VideoHub/src/assets/Thumbnails/blippi1.png",
+        "thumbnail": "/images/Thumbnails/blippi1.png",
         "videoUrl": "https://www.youtube.com/watch?v=rlwf0mvEHnU",
         "views": "45k",
         "uploadDate": "1 month ago",
         "channel": {
         "name": "Blippi world",
-        "avatar": "VideoHub/src/assets/ChannelImages/blippi.png"
+        "avatar": "/images/ChannelImages/blippi.png"
         }
     }
     

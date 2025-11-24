@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import share from 'src/assets/menu items/share.png';
 
 
 function Modal({onClose}){
@@ -27,7 +28,7 @@ function Modal({onClose}){
                     <div className="d-flex"> <i class="bi bi-globe fs-4 mt-2 mx-4"></i> <p className="mt-3 highlight"  onClick={onClose}>www.VideoHub.com/@RamyaS-z2s</p> </div>
                      <div className="d-flex"> <i class="bi bi-info-circle fs-4 mt-2 mx-4"></i> <p className="mt-3"> Joined 20 Nov 2025 </p> </div>
                     
-                     <div className="d-flex highlight sharechannel"><img src="src/assets/menu items/share.png" className="share"></img><p className="mt-2"> Share Channel </p></div>
+                     <div className="d-flex highlight sharechannel"><img src={share} className="share"></img><p className="mt-2"> Share Channel </p></div>
 
                 </div>
              
