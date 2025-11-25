@@ -5,6 +5,10 @@
    grid-row-gap: 30px;
    grid-column-gap: 16px;
    margin-top:15px;
+   /* Ensures the container respects the screen width */
+    width: 100%; 
+    /* Prevents content from overflowing */
+    overflow: hidden;
    
 }
 
@@ -24,6 +28,8 @@
     min-width: 300px;
     height: 225px;
     border-radius: 5px;
+    /* Critical: Overrides any inline styles trying to set a huge width */
+    max-width: 100% !important;
 }
 
 .channel{
