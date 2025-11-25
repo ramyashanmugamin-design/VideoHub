@@ -6,12 +6,27 @@ import './profile.css';
 import { useState } from 'react';
 import Modal from './Modal';
 import dp from '/src/assets/menu items/mychannel.jpg';
+import Subscriptions from './Subscriptions';
+import Create from './Create';
 
 function Profile()
 {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const [showModal,setShowModal] = useState(false);
+
+    const[showSubscription,setShowSubscription] = useState(false);
+
+    const[openCreatemenu,setOpenCreatemenu] = useState(false);
+
+
+    const togglePopup = () => {
+        setShowSubscription(!showSubscription)
+    };
+
+        const toggleCreatePopup = () => {
+        setOpenCreatemenu(!openCreatemenu)
+    };
 
     const customLink=`https://studio.youtube.com/channel/UCbwWUJ-R_ORXIYdwfDWLEpw/editing/profile`;
 
@@ -20,10 +35,11 @@ function Profile()
     return(
         <>
        
-        <Header setMenuOpen={setMenuOpen}/>
+        <Header setMenuOpen={setMenuOpen} onCreateClick={toggleCreatePopup}/>
+        {openCreatemenu && <Create />} 
         
-        {menuOpen ? <Sidebarmenu /> : <Sidebar />}
-    
+        {menuOpen ? <Sidebarmenu /> : <Sidebar onSubscriptionClick={togglePopup}/>}
+        {showSubscription && <Subscriptions />} 
        
         <div className={` ${menuOpen ? "profile-container": "large-profile-container"}`}>
 
@@ -36,9 +52,10 @@ function Profile()
                 <p>More about this channel </p>
                 <p className="more" onClick={()=> setShowModal(true)}>  ...more</p>
                 </div>
+                    <div className="buttons">
                     <p className="customise" onClick={()=>{window.open(customLink,'_blank')}}>Customise channel</p> 
                     <p className="manage" onClick={()=>{window.open(managevideo,'_blank')}}>Manage videos</p>
-                
+                    </div>
                </div> 
            
             {showModal && <Modal onClose={()=> setShowModal(false)} />}

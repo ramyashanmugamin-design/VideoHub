@@ -18,6 +18,7 @@
     background-Color: rgb(241,238,238) ;
     padding-top:5px;
     margin-top:10px;
+    margin-right: 20px;
     text-align: center;
     border-radius: 25px;
     cursor:pointer;
@@ -29,7 +30,6 @@
 
     width:140px;
     height:40px;
-    margin-left: 20px;
     background-Color: rgb(241,238,238) ;
     padding-top:5px;
     text-align: center;
@@ -39,70 +39,23 @@
     display:inline-block;
 }
 
-.more{
-    font-weight:bold;
-    cursor:pointer;
+.profile-container{
+
+    padding-left: 21%;
+   
 }
 
-.modalcard{
-    width: 450px;
-    height:300px;
-    border-radius:5%;
-    background-color: white;
-    
+.large-profile-container{
+
+     padding-left: 7%;
+
 }
 
-.modalcontainer{
-    position:fixed;
-    inset:0;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
 
-.name{
-   margin-left: 20px;
-   margin-top: 20px;
-   margin-bottom:30px;
-   font-weight: bolder;
-}
+@media screen and (min-width:50px) and (max-width: 900px) {
 
-.close{
-    margin-left: 315px;
-    margin-top: 20px;
-    font-size: large;
-    font-weight: bold;
-    cursor: pointer;
+.buttons{
+    display:flex;
+    flex-direction: column;
 }
-
-.info{
-    
-    font-size: large;
-    font-weight: bold;
-}
-
-.video{
-    width:40px;
-    margin-top:1px;
-    margin-left: 15px;
-}
-.share{
-    width:35px;
-    height:35px;
-    margin-top:3px;
-    margin-left: 15px;
-    font-size: medium;
-    font-weight: bold;
-}
-
-.sharechannel{
-    width : 170px;
-    height:40px;
-    text-align: center;
-    border-radius: 25px;
-    margin-left: 15px;
-    background-Color: rgb(241,238,238) ;
-    cursor:pointer;
 }

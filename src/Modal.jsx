@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import share from '/src/assets/menu items/share.png';
+import './modal.css';
 
 
 function Modal({onClose}){
@@ -19,7 +20,7 @@ function Modal({onClose}){
         <div ref={modalRef} onClick={(e)=>modalClose(e)} className="modalcontainer">
             <div className="modalcard ">
                <div className="d-flex"> 
-                        <h5 className="name">Ramya S</h5> 
+                        <h5 className="name">RamyaS</h5> 
                         <div className="close" onClick={onClose}> X </div>
                </div>
 

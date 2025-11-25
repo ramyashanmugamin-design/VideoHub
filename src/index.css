@@ -16,7 +16,7 @@ body{
 
 .container{
 
-    padding-left: 3%;
+    padding-left: 13%;
     padding-right: 0;
     margin-right: 0;
     padding-top:20px;
@@ -33,17 +33,6 @@ body{
    
 }
 
-.profile-container{
-
-    padding-left: 15%;
-   
-}
-
-.large-profile-container{
-
-     padding-left: 7%;
-
-}
 
 .highlight{
     cursor:pointer;

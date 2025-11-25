@@ -9,11 +9,13 @@ import voiceicon from '/src/assets/Icons/voice-search-icon.svg';
 import create from '/src/assets/menu items/create.png';
 import notification from '/src/assets/menu items/notification.png';
 import profileicon from '/src/assets/menu items/mychannel.jpg';
+import ModalVoice from "./ModalVoice";
 
 function Header({setMenuOpen , onCreateClick}) {
     
      const navigate= useNavigate();
      const [searchValue, setSearchValue] = useState('');
+     const [showModal,setShowModal] = useState(false);
 
      function handleSearch()
      {
@@ -41,7 +43,7 @@ return(
                     <div className="middle-section flex-div container-fluid"> 
                         <input type="text" placeholder="Search" className="search-bar" value={searchValue} onChange ={(e)=> setSearchValue(e.target.value)}  onKeyPress={handleKeyPress} />
                         <img src={searchicon} className="search-icon" onClick={()=>handleSearch()} ></img>
-                        <img src={voiceicon} className="voice-icon"></img>
+                        <img src={voiceicon} className="voice-icon" onClick={()=> setShowModal(true)}></img>
                     </div>
 
                     <div className="right-section flex-div">    
@@ -50,6 +52,7 @@ return(
                         <img src={profileicon} className="profile-icon" onClick={(()=>{navigate("/profile")})} ></img>
                         
                     </div>
+                    {showModal && <ModalVoice onClose={()=> setShowModal(false)} />}
             </div>
     
        

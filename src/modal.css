@@ -1,0 +1,71 @@
+
+.modalcard{
+    width: 450px;
+    height:300px;
+    border-radius:5%;
+    background-color: white;
+    
+}
+
+.modalcontainer{
+    position:fixed;
+    inset:0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.name{
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom:30px;
+   font-weight: bolder;
+}
+
+.close{
+    margin-left: 315px;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.more{
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+.info{
+    
+    font-size: large;
+    font-weight: bold;
+}
+
+.video{
+    width:40px;
+    margin-top:1px;
+    margin-left: 15px;
+}
+.share{
+    width:35px;
+    height:35px;
+    margin-top:3px;
+    margin-left: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.sharechannel{
+    width : 170px;
+    height:40px;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 15px;
+    background-Color: rgb(241,238,238) ;
+    cursor:pointer;
+}
