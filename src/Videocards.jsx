@@ -1,16 +1,19 @@
-import React, { useState,useEffect } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import "./index.css";
 import "./header.css";
 import "./videocard.css";
 import db from "./db.json";
-
+const SCROLL_STEP = 150;
 
 function Videocards() {
 
     const [cards,setCards] = useState([]);
     const [filteredVideos, setFilteredVideos] = useState([]);
     const [selectedId,setSelectedId] =useState('1');
-    
+    const listRef = useRef(null);
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(true);
+
 
  {/* 
     useEffect(()=>{
@@ -22,7 +25,7 @@ function Videocards() {
     
 */}
 
-      const data = db.videocard;
+    const data = db.videocard;
     useEffect(()=>{
       setCards(data); 
       setFilteredVideos(data);
@@ -44,10 +47,62 @@ function Videocards() {
         }
         
     }
+
+    const handleScroll = (direction) => {
+        if (listRef.current) {
+
+            console.log(listRef);
+            const currentScroll = listRef.current.scrollLeft;
+            const newScroll = ((direction === 'left') ? currentScroll - SCROLL_STEP : currentScroll + SCROLL_STEP);
+
+            listRef.current.scrollTo({
+                left: newScroll,
+                behavior: 'smooth',
+            });
+            
+            setTimeout(checkScrollPosition, 300); 
+        }
+    };
+
+    const checkScrollPosition = () => {
+        if (listRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = listRef.current;
+
+            setCanScrollLeft(scrollLeft > 0);
+   
+            setCanScrollRight(scrollWidth > clientWidth + scrollLeft + 1); 
+        }
+    };
+
+   useEffect(() => {
+        const listElement = listRef.current;
+        if (listElement) {
+            listElement.addEventListener('scroll', checkScrollPosition);
+            window.addEventListener('resize', checkScrollPosition);
+            checkScrollPosition(); // Initial check
+
+            return () => {
+                listElement.removeEventListener('scroll', checkScrollPosition);
+                window.removeEventListener('resize', checkScrollPosition);
+            };
+        }
+    }, []);
+
     return ( 
         <>
        
-       <div>
+       <div className="wrapper">
+
+        <button 
+                className={`scroll-button left ${canScrollLeft ? '' : 'disabled'}`}
+                onClick={() => handleScroll('left')} 
+                disabled={!canScrollLeft}
+                aria-label="Scroll Left"
+            >
+                &lt;
+        </button>
+            <div className="pagination-container" ref={listRef}>
+
             <ul className="pagination">
             
                 <li onClick={() => filterVideos('all','1')} className={`${selectedId == '1' ? 'selected-item' : 'item'}`}>All</li>
@@ -65,6 +120,16 @@ function Videocards() {
                 <li onClick={() => filterVideos('sweet','13')} className={`${selectedId == '13' ? 'selected-item' : 'item'}`}>Sweets</li>
                 
             </ul>
+            </div>
+        <button 
+                className={`scroll-button right ${canScrollRight ? '' : 'disabled'}`}
+                onClick={() => handleScroll('right')} 
+                disabled={!canScrollRight}
+                aria-label="Scroll Right"
+            >
+                &gt;
+        </button>
+
                  
         </div>
 
