@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body{
+     margin: 0;
+  padding: 0; 
+}
+
 .favicon{
     width:52px;
     height:52px;

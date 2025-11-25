@@ -32,7 +32,7 @@ function Header({setMenuOpen , onCreateClick}) {
 return(
     <>
 
-            <div className="flex-div head">
+            <div className="head">
                     <div className="left-section flex-div"> 
                         <img src={hamburgermenu} className= "hamburgermenu" onClick={()=> setMenuOpen(prev=>prev===false?true:false)}></img>
                         <img src={logo} className="logo" onClick={(()=>{navigate("/")})}></img>

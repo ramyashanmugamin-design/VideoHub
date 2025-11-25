@@ -6,6 +6,7 @@ import Sidebar from './Sidebar';
 import Sidebarmenu from './Sidebarmenu';
 import Subscriptions from './Subscriptions';
 import Create from './Create';
+import Footer from './Footer';
 
 
 function App()
@@ -35,7 +36,7 @@ function App()
         {showSubscription && <Subscriptions />} 
         {menuOpen ? <div className="container"> <Videocards /> </div> : <div className="large-container"> <Videocards /> </div>}
         </div>
-        
+        <Footer />
     </>
     
   );
